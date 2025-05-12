@@ -583,6 +583,10 @@ Linear Regression analysis provided crucial insights into the relative performan
   * Atmos showed poor correlation (R² = 0.32)
   * Alphasense OPCN3 exhibited very weak relationship (R² = 0.25)
 
+![Comparative performance of low-cost sensors against the GRIMM reference instrument in indoor and outdoor environments. The scatter plots illustrate the correlation between sensor readings for different PM size fractions.](img/lcs%20vs%20grimm%20with%20environment.png)
+
+**Figure 1: Comparative performance of low-cost sensors against the GRIMM reference instrument in indoor and outdoor environments. The scatter plots illustrate the correlation between sensor readings for different PM size fractions.**
+
 **Error Metrics Analysis:**
 - Purple Air FlexII consistently demonstrated the lowest MAE for PM1 in indoor environments (1.53 μg/m³), indicating strong agreement with reference measurements
 - Outdoor measurements generally showed 2-3 times higher MAE values compared to corresponding indoor measurements
@@ -630,6 +634,20 @@ The DCP employs a multi-tier architecture designed to handle diverse data source
 - **Asynchronous Processing**: Non-blocking operations for handling simultaneous data streams
 - **Comprehensive Logging**: Detailed audit trails for system operations and data transformations
 
+![Simplified workflow diagram of the Data Collection Portal (DCP) illustrating data flow from sensors to visualization and analysis components.](img/workflow%20diagram.png)
+
+**Figure 2: Simplified workflow diagram of the Data Collection Portal (DCP) illustrating data flow from sensors to visualization and analysis components.**
+
+**Data Flow Architecture:**
+- **Sensor Layer**: Raw data collection from distributed sensor nodes
+- **Ingestion Layer**: Data validation and initial processing
+- **Storage Layer**: Time-series optimized database with data partitioning
+- **Processing Layer**: Automated workflows for data transformation and analysis
+- **API Layer**: RESTful endpoints for data access and integration
+- **Presentation Layer**: Interactive visualization and user interface components
+
+This architecture ensures reliable data collection, robust processing, and flexible access while maintaining data integrity throughout the system.
+
 #### 4.1.2 Data Synchronization and Integration
 
 The DCP implements sophisticated mechanisms to collocate and co-time data received from diverse sensor sources, ensuring that measurements can be directly compared despite differences in native data formats, timestamps, and measurement intervals.
@@ -652,6 +670,10 @@ To facilitate accurate comparative analysis, a controlled testbed environment wa
 
 This controlled environment enabled precise evaluation of relative sensor performance and provided essential calibration data for developing correction algorithms.
 
+![Administrator panel for system configuration and monitoring sensor network health.](img/admin%20panel.png)
+
+**Figure 3: Administrator panel for system configuration and monitoring sensor network health.**
+
 ### 4.2 User Interface and Analytical Capabilities
 
 The DCP features a comprehensive user interface designed to support both basic data exploration and advanced analytical workflows. The interface balances user-friendly operation with sophisticated analytical capabilities to serve diverse user requirements.
@@ -661,11 +683,15 @@ The DCP features a comprehensive user interface designed to support both basic d
 The portal provides robust tools for uploading, managing, and analyzing historical data sets:
 
 **Data Upload Functionality:**
-- **File Import Interface**: Intuitive "Upload New Files" interface supporting multiple file formats (CSV, JSON, Excel)
+- **File Import Interface**: Intuitive "Upload New Files" interface supporting multiple file formats (CSV, JSON, Excel, Text)
 - **Metadata Association**: Customizable metadata fields including location, device information, and experimental conditions
 - **Batch Processing**: Support for bulk uploads with automated processing
 - **Validation Rules**: Configurable data validation rules to identify potential errors during import
 - **Standardization Pipeline**: Automated cleaning and formatting to conform with system standards
+
+![File upload interface for manual data submission to the DCP with metadata annotation capabilities.](img/upload%20new%20file.png)
+
+**Figure 4: File upload interface for manual data submission to the DCP with metadata annotation capabilities.**
 
 **Data Management Features:**
 - **File Repository**: Centralized storage for both raw and processed data files
@@ -674,6 +700,10 @@ The portal provides robust tools for uploading, managing, and analyzing historic
 - **Search Capabilities**: Advanced search functionality with filtering by metadata attributes
 - **Bulk Operations**: Batch processing for common operations across multiple files
 
+![File repository interface showing uploaded raw and processed data files with management options.](img/view%20all%20files.png)
+
+**Figure 6: File repository interface showing uploaded raw and processed data files with management options.**
+
 **Data Visualization and Analysis:**
 - **Interactive Charting**: Dynamic visualization tools with zooming, panning, and selection capabilities
 - **Multi-Parameter Plotting**: Ability to visualize multiple parameters simultaneously with dual y-axes
@@ -681,7 +711,15 @@ The portal provides robust tools for uploading, managing, and analyzing historic
 - **Statistical Summaries**: Automated calculation of key statistics and distribution characteristics
 - **Export Options**: Multiple export formats for charts and processed data
 
+![Data analysis interface with interactive charting capabilities for exploring relationships between measurements.](img/analyse%20data.png)
+
+**Figure 7: Data analysis interface with interactive charting capabilities for exploring relationships between measurements.**
+
 The "View All Files" interface provides comprehensive access to the data repository, enabling users to browse, search, and manage uploaded files. The "Data Table" view presents standardized data in a tabular format with sorting, filtering, and pagination capabilities.
+
+![Data Table view showing standardized sensor readings with sorting and filtering capabilities.](img/data%20table.png)
+
+**Figure 5: Data Table view showing standardized sensor readings with sorting and filtering capabilities.**
 
 #### 4.2.2 Real-time Data Analysis
 
@@ -727,6 +765,10 @@ The dashboard provides a comprehensive real-time overview of current air quality
 - **System Status**: Network health indicators showing connectivity and data flow for all sensors
 
 The real-time capabilities enable immediate detection of air quality events, sensor malfunctions, and network issues, facilitating rapid response and intervention when necessary.
+
+![Real-time dashboard interface showing current air quality measurements across the sensor network with gauge visualizations and comparative metrics.](img/dashboard.png)
+
+**Figure 8: Real-time dashboard interface showing current air quality measurements across the sensor network with gauge visualizations and comparative metrics.**
 
 ### 4.3 Model Creation and Integration
 

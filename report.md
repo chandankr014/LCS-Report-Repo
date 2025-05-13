@@ -1,4 +1,4 @@
-# COMPREHENSIVE REPORT: SELF-CALIBRATING, SELF-DIAGNOSABLE AIR QUALITY SENSOR NETWORK
+# COMPREHENSIVE REPORT: SELF-CALIBRATING, SELF-DIAGNOSABLE LOW COST AIR QUALITY SENSOR NETWORK
 
 ## EXECUTIVE SUMMARY
 
@@ -79,31 +79,17 @@ Despite these advantages, LCS technology has historically been limited by concer
 
 This project aims to develop a comprehensive solution to the limitations of both traditional monitoring networks and existing LCS systems through the following specific objectives:
 
-- **Develop a self-calibrating LCS network**: Create a network architecture capable of automatically adjusting sensor readings based on reference/research-grade analyzers to ensure consistent accuracy over time. This includes:
-  * Implementation of machine learning algorithms for real-time calibration adjustment
-  * Development of protocols for periodic validation against reference instruments
-  * Creation of correction factors for environmental variables (temperature, humidity, etc.)
-  * Establishment of traceability to recognized measurement standards
+1. **Development of a Low-Cost Sensor Network**: To create and deploy a network of low-cost air quality sensors that provides high spatial-temporal coverage and resolution across diverse environments. This network will enable comprehensive comparative analysis by capturing pollution patterns at a granularity impossible with traditional monitoring approaches, revealing micro-scale variations in air quality across urban landscapes, indoor environments, and transitional spaces.
 
-- **Implement self-diagnostic capabilities**: Design an intelligent system capable of:
-  * Automatically detecting sensor malfunction, drift, or degradation
-  * Identifying when sensors require maintenance or replacement
-  * Flagging and excluding unreliable data points from analysis
-  * Generating maintenance alerts and recommendations
-  * Providing confidence levels for reported measurements
+2. **Implementation of Self-Calibration Mechanisms**: To design and implement advanced machine learning algorithms that enable automatic adjustment of sensor readings based on data from reference/research-grade analyzers and equipment. These self-calibration mechanisms will maintain measurement accuracy over extended periods, compensating for sensor drift, aging effects, and response variations across different environmental conditions, thereby ensuring data reliability without frequent manual recalibration.
 
-- **Optimize network configuration and data management**: Enhance overall system performance through:
-  * Determination of optimal sensor placement strategies for maximum coverage
-  * Development of efficient data collection and transmission protocols
-  * Implementation of robust quality assurance and quality control procedures
-  * Creation of a user-friendly data visualization and analysis platform
-  * Establishment of interoperability with existing air quality databases
+3. **Multi-Parameter Integration for Enhanced Accuracy**: To systematically utilize various air quality and sensor-related parameters—including temperature, humidity, pressure, and other environmental factors—to improve the accuracy and reliability of the LCS network. By incorporating these variables into calibration models, the system will apply appropriate correction factors that account for the known influences of environmental conditions on sensor performance, particularly for optical particle counters whose readings are affected by humidity and temperature fluctuations.
 
-- **Validate system performance in diverse environments**: Ensure reliability through:
-  * Comparative testing of multiple sensor types against reference instruments
-  * Evaluation under varying environmental conditions (indoor/outdoor, urban/rural)
-  * Long-term stability assessment under real-world operating conditions
-  * Quantification of measurement uncertainty and system limitations
+4. **Development of Self-Diagnostic Capabilities**: To enable intelligent self-diagnosis features within the LCS network that can automatically detect and report sensor malfunctions, performance degradation, or replacement needs. This system will employ statistical anomaly detection, pattern recognition, and reference comparison to identify when sensors begin to deviate from expected performance parameters, ensuring data integrity and minimizing maintenance requirements through predictive diagnostics rather than scheduled interventions.
+
+5. **Creation of an Intuitive Visualization Interface**: To provide a comprehensive yet user-friendly Graphical User Interface (GUI) for real-time visualization of air quality data, statistical analyses, and sensor performance metrics. This interface will enable researchers, policymakers, and community stakeholders to access, interpret, and utilize the collected data effectively, with customizable display options for different levels of technical expertise and application needs.
+
+6. **Development of an API Infrastructure** *(Extension Objective)*: To design and implement an API wrapper that enables external users to leverage the trained LCS sensor models through secure authentication with API keys via the Data Collection Portal (DCP). This additional objective, established during project implementation, will democratize access to advanced calibration algorithms, allowing third-party sensor deployments to benefit from the reference-grade calibration developed within this project, thereby extending the impact beyond the immediate sensor network and fostering broader adoption of reliable low-cost monitoring solutions.
 
 The project requires multidisciplinary expertise spanning air quality science, sensor technology, data analytics, network architecture, machine learning, and user interface design. By integrating these diverse domains, the project aims to create a transformative approach to air quality monitoring that combines the coverage advantages of LCS networks with the reliability of traditional reference systems.
 

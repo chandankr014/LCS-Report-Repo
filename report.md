@@ -251,7 +251,6 @@ Unlike the other sensors, the Alphasense OPC-N3 lacks built-in wireless connecti
 
 **1. GRIMM 11A (GRIMM Aerosol Technik GmbH, Germany)**
 - **Technology**: High-precision optical particle counter
-<!-- - **Measurement Range**: PM1, PM2.5, PM4, PM10, TSP -->
 - **Size Channels**: 31 size channels from 0.25-32μm
 - **Data Resolution**: 6-second to 1-hour averaging
 - **Detection Limit**: 0.1 μg/m³
@@ -275,7 +274,7 @@ The GRIMM 11A offers RS232 serial communication capability. We developed a Pytho
 **2. Naneos Partector 2 Pro (Naneos Particle Solutions GmbH, Switzerland)**
 - **Technology**: Diffusion charging and electrometry
 - **Measurement Parameters**: Lung-deposited surface area (LDSA), particle number, average diameter
-- **Size Range**: 10nm to 10μm
+- **Size Range**: 10nm to 100nm
 - **Time Resolution**: 1 second
 - **Flow Rate**: 0.5 L/min
 - **Power**: Rechargeable battery, 24+ hours operation
